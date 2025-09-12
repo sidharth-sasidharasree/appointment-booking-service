@@ -7,12 +7,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.4</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath />
 	</parent>
 	<groupId>com.booking</groupId>
 	<artifactId>portal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>portal</name>
+	<name>backend</name>
 	<description>Appointment Booking Portal</description>
 	<url />
 	<licenses>
@@ -31,6 +31,7 @@
 		<java.version>24</java.version>
 		<spring.boot.version>3.5.3</spring.boot.version>
 		<springdoc.version>2.8.9</springdoc.version>
+		<maven.compiler.release>21</maven.compiler.release>
 	</properties>
 	<dependencies>
 		<!-- Spring Boot Starter Web -->
@@ -110,6 +111,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.14.0</version>
+				<configuration>
+					<release>${maven.compiler.release}</release>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

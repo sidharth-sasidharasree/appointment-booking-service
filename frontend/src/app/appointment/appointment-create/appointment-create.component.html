@@ -1,0 +1,9 @@
+<form (ngSubmit)="save()">
+  <input [(ngModel)]="appointment.partyName" name="partyName" placeholder="Name" required />
+  <input [(ngModel)]="appointment.ssn" name="ssn" placeholder="SSN" required />
+  <input [(ngModel)]="appointment.phone" name="phone" placeholder="Phone">
+  <input [(ngModel)]="appointment.email" name="email" placeholder="Email">
+  <input [(ngModel)]="appointment.reasons" name="reasons" placeholder="Reason" required />
+  <input type="date" [(ngModel)]="appointment.appointmentDates" name="appointmentDates" required />
+  <button type="submit">Book Appointment</button>
+</form>

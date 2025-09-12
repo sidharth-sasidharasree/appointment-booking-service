@@ -1,0 +1,42 @@
+.app-container {
+}
+
+mat-sidenav {
+  width: 220px;
+  background: #f5f5f5;
+}
+
+.page-content {
+  padding: 16px;
+}
+
+.active-link {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+/* Make toolbar fixed at the top */
+.top-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(135deg, #2196f3, #21cbf3); /* blue gradient */
+}
+
+/* Add a spacer below toolbar for sidenav container */
+.sidenav-container {
+  height: calc(100vh - 64px); /* subtract toolbar height */
+  margin-top: 64px;           /* toolbar height */
+}
+
+/* Content styling */
+.content {
+  padding: 16px;
+}
+
+/* Push right-aligned buttons in toolbar */
+.spacer {
+  flex: 1 1 auto;
+}
